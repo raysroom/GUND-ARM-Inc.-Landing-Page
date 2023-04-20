@@ -47,7 +47,7 @@ ul {
     list-style: none;
     display: flex;
     gap: 32px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 20px;
 }
 
@@ -64,13 +64,15 @@ a:active.menu, a:hover.menu {
 }
 
 .main {
-    background-color: rgba(35,41,95,0.65);
+    background-color: rgba(35,41,95,0.75);
     box-shadow: 0 0 20px rgba(0,0,0,0.9) inset;
     display: flex;
     padding: 32px;
     max-width: 75%;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    gap: 16px;
 }
 
 .description {
@@ -78,6 +80,10 @@ a:active.menu, a:hover.menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap:32px;
+}
+.description h1 {
+    margin: 0;
 }
 
 a.donate {
@@ -85,12 +91,99 @@ a.donate {
    color: #ebebf5;
    text-align: center;
    border: none;
+   border-radius: 8px;
    padding: 16px;
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
+a:active.donate, a:hover.donate {
+    color: #f1ad47;
+    background-color: rgb(71, 139, 241);
+}
+
+p { 
+    font-weight: 400;
+}
+.main_img {
+    border-radius: 8px;
+    overflow: hidden;
+
+}
 .video {
-    max-width: 90%;
+    max-width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 235, 245);
+    text-align: center;
+    padding: 48px;
+    color: #04040a;
+    gap: 16px;
+    /* box-shadow: 0 0 96px rgba(20,20,30.9) inset; */
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+.icon {
+    flex: 1 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.icon img {
+    border-radius: 16px;
+    border: 3px solid rgba(4, 4, 10, .95);
+    background-color: rgb(235, 235, 245);
+}
+
+.img_text {
+    font-size: 24px;
+}
+
+.bg_2 {
+    background-image: url('images/aerial+suletta.jpg');
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.quote {
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    color:#04040a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.spoken {
+    max-width: 600px;
+}
+.speaker {
+    align-self: flex-end;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(35,41,95,0.95);
+    width:auto;
 }
