@@ -213,6 +213,7 @@ p {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 96px rgba(169,169,197.9) inset;
 }
+
 .newsbox {
     background-color: rgba(35,41,95,.9);
     display: flex;
