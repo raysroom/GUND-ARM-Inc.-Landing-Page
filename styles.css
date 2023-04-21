@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,9 +30,14 @@ body {
     align-self: stretch;
 }
 
+.left {
+    display: flex;
+    gap: 16px;
+}
+
 .header h1{
     color: rgb(71, 139, 241);
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 img { 
@@ -65,7 +70,7 @@ a:active.menu, a:hover.menu {
 
 .main {
     background-color: rgba(35,41,95,0.75);
-    box-shadow: 0 0 20px rgba(0,0,0,0.9) inset;
+    box-shadow: 0 0 20px rgba(35,41,95,0.95) inset;
     display: flex;
     padding: 32px;
     max-width: 75%;
@@ -90,7 +95,7 @@ a.donate {
    background-color: rgb(33,50,150);
    color: #ebebf5;
    text-align: center;
-   border: none;
+   border: 2px solid #ebebf5;
    border-radius: 8px;
    padding: 16px;
    display: flex;
@@ -118,12 +123,12 @@ p {
 .info {
     display: flex;
     flex-direction: column;
-    background-color: rgb(235, 235, 245);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 48px;
     color: #04040a;
     gap: 16px;
-    /* box-shadow: 0 0 96px rgba(20,20,30.9) inset; */
+    box-shadow: 0 0 96px rgba(169,169,197.9) inset;
 }
 .icons {
     display: flex;
@@ -155,7 +160,7 @@ p {
     background-image: url('images/aerial+suletta.jpg');
     position: relative;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -167,13 +172,18 @@ p {
 
 .quote {
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 600;
     font-style: italic;
-    color:#04040a;
+    color:#ebebf5;
+    /* background-color: rgba(12,16,59,.55); */
+    background-color: rgba(35,41,95,.6);
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 48px;
+    padding: 24px;
 }
 .spoken {
     max-width: 600px;
@@ -185,5 +195,57 @@ p {
 .footer {
     text-align: center;
     background-color: rgba(35,41,95,0.95);
-    width:auto;
+    align-self: stretch;
+    padding-bottom: 8px;
+}
+
+.footer a{
+    font-size: small;
+    text-decoration: none;
+    color: #ebebf5;
+}
+
+.newsletter {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 96px rgba(169,169,197.9) inset;
+}
+.newsbox {
+    background-color: rgba(35,41,95,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+a.sign-up {
+    background-color: rgb(33,50,150);
+    color: #ebebf5;
+    text-align: center;
+    border: 2px solid #ebebf5;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:active.sign-up, a:hover.sign-up {
+    color: #f1ad47;
+    background-color: rgb(71, 139, 241);
+}
+
+.news {
+    color: #ebebf5;
+    text-align: center;
+}
+
+.gundblue {
+    color: rgb(71, 139, 241);
 }
