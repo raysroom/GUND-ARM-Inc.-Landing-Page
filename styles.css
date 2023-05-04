@@ -250,3 +250,43 @@ a:active.sign-up, a:hover.sign-up {
 .gundblue {
     color: rgb(71, 139, 241);
 }
+
+.page2 {
+    background-color: rgb(71, 139, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citation {
+    background-color: rgba(35,41,95,.6);
+    text-align: center;
+    padding: 32px;
+    margin: 32px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.citation h1 {
+    font-size: 24px;
+}
+
+.citation ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+.citation a {
+    text-decoration: none;
+}
+
+a:visited.artist, a:link.artist {
+    color: #ebebf5;
+}
+
+ a:active.artist, a:hover.artist {
+    color:#f1ad47
+}
